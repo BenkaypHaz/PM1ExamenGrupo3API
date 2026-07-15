@@ -1,0 +1,23 @@
+# Artefactos de compilación de .NET
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+*.user
+
+# Visual Studio
+.vs/
+
+# Secretos locales (por si alguien deja credenciales aquí)
+appsettings.*.local.json
+secrets.json
+
+# Documentación que se comparte manualmente (no va al repositorio)
+LEEME.md
+README.md
+
+# Archivos de trabajo de asistentes de IA
+tasks/
+.claude/
+CLAUDE.md
+*.plan.md

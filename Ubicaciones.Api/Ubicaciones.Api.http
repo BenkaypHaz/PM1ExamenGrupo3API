@@ -1,0 +1,42 @@
+@UbicacionesApi_HostAddress = http://localhost:4445
+
+### Obtener todos los contactos
+GET {{UbicacionesApi_HostAddress}}/api/contactos
+Accept: application/json
+
+### Buscar contactos por nombre o teléfono
+GET {{UbicacionesApi_HostAddress}}/api/contactos?buscar=Jose
+Accept: application/json
+
+### Obtener un contacto por id
+GET {{UbicacionesApi_HostAddress}}/api/contactos/1
+Accept: application/json
+
+### Crear un contacto
+POST {{UbicacionesApi_HostAddress}}/api/contactos
+Content-Type: application/json
+
+{
+  "nombre": "Jose Escalante",
+  "telefono": "99887766",
+  "latitud": 15.50,
+  "longitud": -88.00,
+  "imagenBase64": null,
+  "videoRuta": null
+}
+
+### Actualizar un contacto
+PUT {{UbicacionesApi_HostAddress}}/api/contactos/1
+Content-Type: application/json
+
+{
+  "nombre": "Jose Escalante Editado",
+  "telefono": "99887755",
+  "latitud": 15.51,
+  "longitud": -88.01,
+  "imagenBase64": null,
+  "videoRuta": null
+}
+
+### Eliminar un contacto
+DELETE {{UbicacionesApi_HostAddress}}/api/contactos/1
